@@ -2,7 +2,7 @@ import React from "react";
 import  {createRoot}  from "react-dom/client";
 import { FirstApp } from "./FirstApp";
 import { HelloWordApp } from "./HelloWordApp";
-
+import './style.css';
 
 
 function App(){

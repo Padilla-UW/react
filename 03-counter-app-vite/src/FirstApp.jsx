@@ -1,5 +1,10 @@
+const newMensaje = () =>{
+    return 'Hola';
+} 
+    
+
 export const FirstApp = () => {
     return (
-        <h1>First App</h1>
+        <h1>{newMensaje()}</h1>
     );
 }
