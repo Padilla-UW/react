@@ -3,8 +3,12 @@ const newMensaje = () =>{
 } 
     
 
-export const FirstApp = () => {
+export const FirstApp = (props) => {
     return (
-        <h1>{newMensaje()}</h1>
+        <>
+        <h1>{props.title}</h1>
+        <p>{props.subtitle}</p>
+        
+        </>
     );
 }
