@@ -12,5 +12,5 @@ function App(){
 
 const root =  createRoot(document.getElementById('root'));
 root.render(
-        <FirstApp title="Hola soy goku" subtitle={123} />
+        <FirstApp subtitle={123} />
     );
