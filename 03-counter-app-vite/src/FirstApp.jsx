@@ -1,7 +1,4 @@
-const newMensaje = () =>{
-    return 'Hola';
-} 
-    
+import PropTypes from 'prop-types';
 
 export const FirstApp = (props) => {
     return (
@@ -11,4 +8,9 @@ export const FirstApp = (props) => {
         
         </>
     );
+}
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.number.isRequired,
 }
