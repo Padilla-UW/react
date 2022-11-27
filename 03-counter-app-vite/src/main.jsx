@@ -13,5 +13,5 @@ function App(){
 
 const root =  createRoot(document.getElementById('root'));
 root.render(
-        <CounterApp value={1}/>
+        <CounterApp value={10}/>
     );
