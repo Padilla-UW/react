@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrind";
 
 export const GifExpertApp = ()=>{
 
-    const [categories, setCategories] = useState(['one punch','Dragon']);
+    const [categories, setCategories] = useState(['one punch']);
 
     const onAddCategory = (value) =>{
         if(categories.includes(value))return;
@@ -15,11 +16,13 @@ export const GifExpertApp = ()=>{
         <h1>GifExpert</h1>
         <AddCategory onNewCategory = {onAddCategory}/>
 
-        <ol>
-            { categories.map(category => {
-                return <li key={category}>{category}</li>
-            })}
-        </ol>
+
+        { categories.map(category => 
+                <GifGrid 
+                key={category} 
+                category = {category} />
+        )}
+  
         </>
     )
 }
