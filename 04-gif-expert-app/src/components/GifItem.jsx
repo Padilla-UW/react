@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 export const GifItem = ({url,title}) => {
-  console.log('Entra');
+
     return (
     <div className="card">
         <img src={url} alt={title} />
