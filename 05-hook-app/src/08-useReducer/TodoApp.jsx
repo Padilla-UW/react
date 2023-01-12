@@ -49,19 +49,16 @@ export const TodoApp = () => {
 
             <div className="row">
                 <div className="col-7">
-
                 {
                     <TodoList todos={todos} onDeleteTodo = {handleDeleteTodo}/>
                 }
-                
                 </div>
                 <div className="col-5">
                     <h4>Agregar todo</h4>
                     <hr />
-                    {<TodoAdd onNewTodo={handleNewTodo} 
-                              />}
+                    {<TodoAdd onNewTodo={handleNewTodo} />}
                 </div>
             </div>
-    </>
-  )
+        </>
+        )
 }

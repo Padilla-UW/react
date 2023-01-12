@@ -7,10 +7,8 @@ export const TodoAdd = ( {onNewTodo}) => {
         description:''
     }) 
 
-
     const onFormSubmit = (event)=>{
         event.preventDefault();
-
         if (description.length <1 ) return;
         const newTodo = {
             id: new Date().getTime(),
@@ -36,5 +34,5 @@ export const TodoAdd = ( {onNewTodo}) => {
                         Agregar
                     </button>
             </form>
-  )
+        )
 }
