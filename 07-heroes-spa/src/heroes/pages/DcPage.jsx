@@ -1,3 +1,4 @@
+import { HeroList } from "../componets"
 
 export const DcPage = () => {
   return (
@@ -5,6 +6,8 @@ export const DcPage = () => {
         <h1>
             Dc Page
         </h1>
+        <hr />
+        <HeroList publisher='DC Comics' />
     </>
   )
 }
